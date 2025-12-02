@@ -21,3 +21,6 @@ To compile all modules into a single file, run this command from the project's r
 ```powershell
 ./darklua.exe process ./source/main/core.luau compiled.luau
 ```
+
+## Development enviroment
+The script is developed in VS Code with the [Luau language server](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.luau-lsp) extension.
