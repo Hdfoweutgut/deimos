@@ -24,3 +24,6 @@ To compile all modules into a single file, run this command from the project's r
 
 ## Development enviroment
 The script is developed in VS Code with the [Luau language server](https://marketplace.visualstudio.com/items?itemName=JohnnyMorganz.luau-lsp) extension.
+
+## Support
+For more info and support you can ask questions on the [Deimos Discord Server](https://discord.gg/AsWAVd5dqf) or to the @rawparmesan in Discord.
