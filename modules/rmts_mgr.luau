@@ -60,6 +60,13 @@ if places.place_group == "mission" then
             while env.equipWeapon == nil or env.getModdedStats == nil do task.wait() end
 
             local old = clonefunction(env.getModdedStats)
+            getPerk = env.getPerk 
+            --[[
+                ^^^
+                Don't change this variable to local; seems like clonefunction doesn't
+                works properly and doesn't copy references to the global variables from the
+                enviroment of the function.
+            ]]--
 
             env.getModdedStats = function(arg)
                 local modded_stats = old(arg)
