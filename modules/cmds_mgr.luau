@@ -1351,7 +1351,7 @@ cmds_mgr.cmds = {
     {
         name = "buyweapon",
         mode = "mission",
-        desc = "buyweapon\n\ncall: buyweapon <weapon_name: text>\ncommand type: one time, visible, irreversible\n\ndescription: buys the selected weapon. You can't buy MM20 using this command.",
+        desc = "buyweapon\n\ncall: buyweapon <weapon_name: text>\ncommand type: one time, visible, irreversible\n\ndescription: buys the selected weapon.",
         usage_example = "buyweapon raven\nbuyweapon Thumper",
         checks = {
             args = {
@@ -2513,5 +2513,6 @@ setmetatable(cmds_mgr.cmds, {
         return nil
     end
 })
+
 
 return cmds_mgr
