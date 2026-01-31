@@ -1196,7 +1196,7 @@ af_util.StopScenario = function()
 end
 
 af_util.scenarios = {
-    [3200010305] = function() -- blacksite
+    [3200010305] = function() -- The Blacksite
         af_util.ValidateCommand("void all, opendoors", "autofarm")
 
         local Doors = Geometry:WaitForChild("Doors", math.huge):GetChildren()
@@ -1453,7 +1453,7 @@ af_util.scenarios = {
             tools.FireTouchTrigger(CutsceneTrigger)
         end)]]--
     end,
-    [2625195454] = function() -- deposit
+    [2625195454] = function() -- The Deposit
         af_util.ValidateCommand("void all", "autofarm")
 
         local plr_count = #Players:GetPlayers()
@@ -1542,7 +1542,7 @@ af_util.scenarios = {
             local HalfTrigger = trigger:FindFirstChild("HalfTrigger")
             if not HalfTrigger then return false end
 
-            if tools.ComparePositions(BoxLoc.Position, HalfTrigger.Position, 1.2) == true then
+            if tools.ComparePositions(BoxLoc.Position, HalfTrigger.Position, 50) == true then
                 return true
             end
 
@@ -1565,7 +1565,7 @@ af_util.scenarios = {
 
         af_util.PressReplayButton()
     end,
-    [2797881676] = function() -- financier
+    [2797881676] = function() -- The Financier
         af_util.ValidateCommand("hide g", "autofarm")
         local ryan_rossling = npc_mgr.GetNpcsFromTeamByAmt("s", 1)
         npc_mgr.MoveNPC(ryan_rossling, Vector3.new(-39.9, 6, 39.2))
@@ -3205,5 +3205,6 @@ af_util.bounds = {
         }
     }
 }
+
 
 return af_util
