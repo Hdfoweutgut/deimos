@@ -7474,7 +7474,7 @@ Press Z to open the info panel about the players.]]
                     if not HalfTrigger then
                         return false
                     end
-                    if tools.ComparePositions(BoxLoc.Position, HalfTrigger.Position, 1.2) == true then
+                    if tools.ComparePositions(BoxLoc.Position, HalfTrigger.Position, 50) == true then
                         return true
                     end
 
